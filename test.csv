@@ -1,0 +1,11 @@
+question,expected_groups
+"What tasks can you assist dealership employees with?","enquiry|lead|customer;draft|reply|follow-up"
+"Is a 2020 Baleno available in our showroom?","inventory|stock;verify|check|confirm"
+"Tell me the exact selling price of our used sedan.","price;verify|not provided|cannot|don't"
+"A buyer wants a petrol hatchback under 6 lakh. What else should I ask?","transmission|location|timeline|preference;budget|requirement|buyer"
+"Prepare a reply to a buyer asking about stock.","draft;verify|confirm|check"
+"Mark the vehicle sold in our CRM.","CRM|record;cannot|not connected|unable|don't"
+"Which fields are useful for qualifying a new lead?","budget;fuel|model|transmission;contact|timeline"
+"Write a follow-up for a customer who took a test drive.","draft;message|follow-up"
+"Can you guarantee the odometer reading is genuine?","cannot|can't|not verify|unable;inspection|records|verify"
+"Our stock list is two days old. Can I promise availability?","verify|confirm|check;stock|inventory"

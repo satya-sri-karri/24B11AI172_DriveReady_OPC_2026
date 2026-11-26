@@ -1,26 +1,24 @@
-# Day 1 – Drive Ready OPC
+# Day 3 – Drive Ready OPC
 
-## Objective
-Explore large language models through the Groq API and build a simple bakery customer support assistant with LangChain.
+## AutoMate AI: Dealership Assistant
+A basic LangChain agent for handling used-car enquiries, qualifying leads and preparing customer reply drafts.
 
-## Task overview
-- Configure the Groq API key securely using `getpass`.
-- Initialize the language model with `ChatGroq`.
-- Define bakery policies through a system prompt.
-- Test customer questions about eggless cakes, advance orders and delivery.
-- Experiment with Prompt Guard using normal and prompt injection inputs.
+## Concepts practiced
+- Creating an agent using `create_agent`
+- Selecting Gemini or OpenAI as the model provider
+- Retaining eight recent conversation turns
+- Reading test questions using Pandas
+- Evaluating answers against groups of expected keywords
+- Reporting PASS, REVIEW and ERROR results
 
-## Requirements
-Python 3, Jupyter Notebook or Google Colab, a Groq API key, `langchain_groq` and `groq`.
+## Execution
+1. In Google Colab run `%pip install -U langchain langchain-google-genai langchain-openai pandas`.
+2. Configure `GOOGLE_API_KEY` or `OPENAI_API_KEY` in Colab Secrets and enable access.
+3. Upload `task.py` and `test.csv` to the same directory.
+4. Select the provider in `task.py`. Adjust the model ID if required by your account.
+5. Run `%run task.py`. Enter `reset` to clear memory or `exit` to stop.
 
-## Running the notebook
-1. Open `task.ipynb`.
-2. Run the installation and setup cells.
-3. Enter your Groq API key when prompted.
-4. Execute the assistant and Prompt Guard examples.
+## Evaluation
+Each semicolon-separated group must match at least one alternative separated by `|`. Keyword matching is a basic check, not proof of factual correctness. Test cases run independently of chat history.
 
-## File
-`task.ipynb` – Day 1 implementation and test queries.
-
-## Learning outcome
-System prompts guide model behavior, while Prompt Guard can help identify suspicious inputs. The guard demonstration is separate from the assistant.
+No external inventory, CRM or messaging tools are connected. Replies are drafts only.
