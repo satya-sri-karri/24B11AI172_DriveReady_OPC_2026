@@ -1,24 +1,37 @@
-# Day 3 – Drive Ready OPC
+# Drive Ready OPC 2026 – Agentic AI Training
 
-## AutoMate AI: Dealership Assistant
-A basic LangChain agent for handling used-car enquiries, qualifying leads and preparing customer reply drafts.
+This repository contains my day-wise practical assignments for Drive Ready OPC 2026. The exercises explore prompt engineering, LangChain, model APIs, tools, conversation history and simple agent evaluation.
 
-## Concepts practiced
-- Creating an agent using `create_agent`
-- Selecting Gemini or OpenAI as the model provider
-- Retaining eight recent conversation turns
-- Reading test questions using Pandas
-- Evaluating answers against groups of expected keywords
-- Reporting PASS, REVIEW and ERROR results
+## Folder structure
 
-## Execution
-1. In Google Colab run `%pip install -U langchain langchain-google-genai langchain-openai pandas`.
-2. Configure `GOOGLE_API_KEY` or `OPENAI_API_KEY` in Colab Secrets and enable access.
-3. Upload `task.py` and `test.csv` to the same directory.
-4. Select the provider in `task.py`. Adjust the model ID if required by your account.
-5. Run `%run task.py`. Enter `reset` to clear memory or `exit` to stop.
+```text
+day1/
+  README.md
+  task.ipynb
+day2/
+  README.md
+  task.py
+day3/
+  README.md
+  task.py
+  test.csv
+```
 
-## Evaluation
-Each semicolon-separated group must match at least one alternative separated by `|`. Keyword matching is a basic check, not proof of factual correctness. Test cases run independently of chat history.
+## Daily assignments
 
-No external inventory, CRM or messaging tools are connected. Replies are drafts only.
+| Day | Focus | Implementation |
+| --- | --- | --- |
+| [Day 1](day1/) | LLM setup, system prompts, prompt-injection checks | Sweet Crumbs Home Bakery assistant with Groq and Prompt Guard |
+| [Day 2](day2/) | Few-shot prompts, JSON extraction, functions, decorators, tools and memory | AutoMate AI automotive assistant |
+| [Day 3](day3/) | LangChain agents, Gemini/OpenAI, memory and CSV evaluation | AutoMate AI dealership assistant |
+
+Each folder includes its own README with prerequisites, execution instructions and learning outcomes.
+
+## Getting started
+
+1. Open the README inside the required day folder.
+2. Install the dependencies mentioned there.
+3. Add your own API key through environment variables or Google Colab Secrets. **Never commit API keys to GitHub.**
+4. Run the notebook or Python file and review its results.
+
+**Note:** These assignments use external model APIs. Actual responses vary by model and are not included as verified execution results.
