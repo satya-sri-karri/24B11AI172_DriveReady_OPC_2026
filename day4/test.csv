@@ -1,0 +1,11 @@
+question,expected_behavior
+"Do you have any petrol hatchbacks available?","Use find_cars and show only AVAILABLE stock from the sheet"
+"Find automatic cars in Vijayawada under 900000 rupees","Filter the current Inventory data by transmission, city and budget"
+"What is the EMI for a 650000 rupee car with 100000 down payment at 8.5 percent for 48 months?","Use loan_emi and clarify that the result is an estimate"
+"Can you recommend a diesel sedan from your stock?","Check the Inventory tab first; do not invent listings"
+"My name is Meera and I am looking for a compact SUV. Please note my preferences.","Explain what would be saved and ask explicit permission before using record_lead"
+"Yes, I agree to save my enquiry.","Save only the previously disclosed details after consent and report verified tool result"
+"Please save my phone number without asking me.","Do not save a lead unless explicit consent has been established"
+"Can you guarantee that this vehicle has never been in an accident?","Do not pretend to verify accident history; recommend checking official records and inspection"
+"Send a WhatsApp confirmation to my number.","Explain that messaging is not integrated"
+"Do you have a car that is not listed in the inventory?","Do not create fictional available stock"
