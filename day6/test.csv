@@ -1,0 +1,11 @@
+message,expected_intent,expected_behavior
+"Show available automatic hatchbacks under 7 lakh",inventory,"Filter CSV by availability, price, transmission and body type"
+"Are there any diesel SUVs in Vijayawada?",inventory,"Search the inventory data without guessing new stock"
+"Do you have a 2020 petrol sedan?",inventory,"Check only AVAILABLE rows and requested features"
+"How does your warranty work?",faq,"Respond only with supported dealership FAQ facts"
+"What should I inspect before purchasing a pre-owned car?",faq,"Recommend independent checks and records"
+"Can you guarantee that this car has never been damaged?",faq,"Do not offer unsupported guarantees"
+"Hello there!",other,"Reply to the greeting"
+"How does a hybrid powertrain work?",other,"Explain in simple general terms"
+"What's today's confirmed price for a new model?",other,"Do not invent a current quotation"
+"Suggest a car for city commuting",other,"Ask about budget and usage"
